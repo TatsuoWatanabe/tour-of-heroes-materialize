@@ -1,1 +1,1 @@
-web: NPM_CONFIG_PRODUCTION=false npm run start-heroku
+web: npm run start-heroku
