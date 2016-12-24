@@ -1,0 +1,21 @@
+<div id="search-component">
+  <div class="row">
+    <div class="input-field col s12 m12">
+      <i class="material-icons prefix">search</i>
+      <input type="text" id="search-box" #searchBox (keyup)="search(searchBox.value)" />
+      <label class="active" for="search-box">Hero Search</label>
+
+      <div class="collection search-result">
+        <a
+          *ngFor="let hero of heroes | async"
+          (click)="gotoDetail(hero); $event.preventDefault()"
+          class="collection-item"
+        >
+          {{hero.name}}
+        </a>
+      </div>
+    </div><!--/.input-field -->
+  </div><!--/.row -->
+
+
+</div>

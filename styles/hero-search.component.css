@@ -1,0 +1,10 @@
+#search-box {
+  margin-bottom: 0; }
+
+.search-result {
+  margin-top: 0;
+  margin-left: 42.5px;
+  border-top-width: 0;
+  border-bottom-width: 0; }
+  .search-result .collection-item {
+    border: 1px solid #e0e0e0; }
