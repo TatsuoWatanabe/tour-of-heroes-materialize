@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "start"       : "concurrently \"npm run watch:tsc\" \"npm run watch:scss\" \"lite-server\" ",
-    "start-heroku": "concurrently \"npm run tsc\"       \"npm run scss\"       \"lite-server\" ",
+    "start": "concurrently \"npm run watch:tsc\" \"npm run watch:scss\" \"lite-server\" ",
+    "start-heroku": "concurrent \"npm run tsc\" \"npm run http-server\" ",
     "watch:tsc": "tsc -w",
     "watch:scss": "node-sass src/scss --output styles -w",
     "tsc": "tsc",
