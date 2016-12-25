@@ -4,7 +4,7 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "start": "concurrently \"npm run watch:tsc\" \"npm run watch:scss\" \"lite-server\" ",
-    "start-heroku": "concurrently \"npm run tsc\" \"http-server\" ",
+    "start-heroku": "concurrently \"npm run tsc\" \"lite-server\" ",
     "watch:tsc": "tsc -w",
     "watch:scss": "node-sass src/scss --output styles -w",
     "tsc": "tsc",
