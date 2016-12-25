@@ -1,27 +1,4 @@
-// includes materialize.scss
-@import "../../node_modules/materialize-css/sass/materialize.scss";
-
-.blue-text-darken {
-  @extend .blue-text;
-  @extend .text-darken-4;
-}
-
-.header {
-  @extend .blue-text-darken;
-}
-
 .btn-slim {
   height: 25px;
   line-height: 25px;
-}
-
-.btn-blue {
-  @extend .btn;
-  @extend .blue;
-  @extend .lighten-1;
-}
-
-.waves-effect-light {
-  @extend .waves-effect;
-  @extend .waves-light;
 }

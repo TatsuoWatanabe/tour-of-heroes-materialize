@@ -6,7 +6,7 @@
 
   <button
     (click)="add(heroName.value); heroName.value=''"
-    class="btn-blue btn-slim waves-effect-light"
+    class="btn blue btn-slim waves-effect waves-light"
   >
     Add
   </button>
@@ -31,7 +31,7 @@
 <div class="collection">
   <a
     *ngFor="let hero of heroes"
-    class="collection-item blue-text-darken"
+    class="collection-item blue-text text-darken4"
     [class.active]="hero === selectedHero"
     (click)="onSelect(hero); $event.preventDefault()">
     {{hero.name}}
@@ -39,7 +39,7 @@
     <span class="badge">
       {{hero.id}}
       <button
-        class="btn-blue btn-slim waves-effect-light delete"
+        class="btn blue btn-slim waves-effect waves-light delete"
         (click)="delete(hero); $event.stopPropagation()"
       >
         <i class="material-icons">delete</i>
