@@ -1,10 +1,10 @@
 {
-  "name": "angular-quickstart",
+  "name": "tour-of-heroes-materialize",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "start": "concurrently \"npm run watch:tsc\" \"npm run watch:scss\" \"lite-server\" ",
-    "start-heroku": "concurrently \"npm run tsc\" \"http-server\" ",
+    "start-heroku": "concurrently \"http-server\" ",
     "watch:tsc": "tsc -w",
     "watch:scss": "node-sass src/scss --output styles -w",
     "tsc": "tsc",
@@ -36,6 +36,7 @@
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-rc.4",
     "systemjs": "0.19.40",
+    "tsc": "^1.20150623.0",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
